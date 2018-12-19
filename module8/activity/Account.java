@@ -1,6 +1,9 @@
 package sef.module8.activity;
 
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 /**
  * Thsi class represents a simple representation of an account encapsulating
  * a name 
@@ -9,7 +12,7 @@ package sef.module8.activity;
  *
  */
 public class Account {
-
+	String accountName;
 
 
 	/**
@@ -20,9 +23,21 @@ public class Account {
 	 * @throws AccountException
 	 */
 	public  Account(String accountName) throws AccountException{
-			
-			
-			
+		if(accountName.length()<4)
+		{
+			throw new AccountException(AccountException.NAME_TOO_SHORT,accountName);
+		}
+		else {
+			Pattern pattern = Pattern.compile("[a-zA-Z]\\d");
+			Matcher matcher = pattern.matcher(accountName);
+			if (matcher.find()) {
+				throw new AccountException(AccountException.NAME_TOO_SIMPLE, accountName);
+			}
+			else
+			{
+				this.accountName=accountName;
+			}
+		}
 	}
 	
 	
@@ -32,6 +47,6 @@ public class Account {
 	 * @return the account name
 	 */
 	public String getName(){
-		return "";
+		return this.accountName;
 	}
 }
