@@ -8,7 +8,7 @@ package sef.module7.activity;
  *
  */
 public class DenominationImpl implements Denomination {
-
+	String name, description, symbol;
 	
 	/**
 	 * Creates a new instance with the specified parameters
@@ -18,28 +18,30 @@ public class DenominationImpl implements Denomination {
 	 * @param symbol
 	 */
 	public DenominationImpl(String name, String description, String symbol) {
-	
+		this.name=name;
+		this.description=description;
+		this.symbol=symbol;
 	}
 
 	/* (non-Javadoc)
 	 * @see sef.module6.activity.Denomination#getDescription()
 	 */
 	public String getDescription() {
-		return "";
+		return this.description;
 	}
 	
 	/* (non-Javadoc)
 	 * @see sef.module6.activity.Denomination#getName()
 	 */
 	public String getName() {
-		return "";
+		return this.name;
 	}
 
 	/* (non-Javadoc)
 	 * @see sef.module6.activity.Denomination#getSymbol()
 	 */
 	public String getSymbol() {
-		return "";
+		return this.symbol;
 	}
 
 	/* (non-Javadoc)
@@ -47,7 +49,7 @@ public class DenominationImpl implements Denomination {
 	 */
 	@Override
 	public String toString() {
-		return "";
+		return this.toString();
 	}
 
 	/* (non-Javadoc)
@@ -55,7 +57,7 @@ public class DenominationImpl implements Denomination {
 	 */
 	public boolean equals(Object o) {
 		
-		return false;
+		return this == o;
 
 	}
 
