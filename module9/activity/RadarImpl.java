@@ -83,14 +83,20 @@ public class RadarImpl implements Radar{
 	 * @see sef.module8.activity.Radar#returnContacts()
 	 */
 	public List<RadarContact> returnContacts() {
-		return contacts;
+		List<RadarContact> tempContacts;
+		tempContacts = new ArrayList();
+		for (RadarContact contact:contacts){
+			tempContacts.add(contact);
+		}
+		return tempContacts;
 	}
 
 	/* (non-Javadoc)
 	 * @see sef.module8.activity.Radar#returnContacts(java.util.Comparator)
 	 */
 	public List<RadarContact> returnContacts(Comparator<RadarContact> comparator) {
-		//return contacts;
-		return Collections.sort(contacts, new DistanceComparator());
+		List<RadarContact> sortedContacts =returnContacts();
+		Collections.sort(sortedContacts, new DistanceComparator());
+		return sortedContacts;
 	}
 }
