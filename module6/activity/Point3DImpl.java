@@ -81,9 +81,18 @@ public class Point3DImpl extends Point2DImpl implements Point3D{
 	 * @return true if the parameter is an instance of Point3D and contain the same coordinates, false otherwise
 	 */
 	public boolean equals(Object p){
-	
-		return this == p;
-		
+		if(this != null) {
+			Point3DImpl point3DImpl = (Point3DImpl)p;
+			if(point3DImpl!=null)
+			{
+				return point3DImpl.getZ() == getZ() && equals(point3DImpl.getX(),point3DImpl.getY());
+			}
+			return  false;
+		}
+		else
+		{
+			return p == null;
+		}
 	}
 	
 	
