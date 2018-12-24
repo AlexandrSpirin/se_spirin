@@ -83,7 +83,18 @@ public class Point2DImpl implements Point2D {
 	 * @see java.lang.Object#equals(java.lang.Object)
 	 */
 	public boolean equals(Object p){
-		return this == p;
+		if(this != null) {
+			Point2DImpl point2DImpl = (Point2DImpl)p;
+			if(point2DImpl!=null)
+			{
+				return point2DImpl.getY() == getY() && point2DImpl.getX() == getX();
+			}
+			return  false;
+		}
+		else
+		{
+			return p == null;
+		}
 	}
 	
 
