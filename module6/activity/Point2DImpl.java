@@ -87,7 +87,7 @@ public class Point2DImpl implements Point2D {
 			Point2DImpl point2DImpl = (Point2DImpl)p;
 			if(point2DImpl!=null)
 			{
-				return point2DImpl.getY() == getY() && point2DImpl.getX() == getX();
+				return point2DImpl.getX() == getX() && point2DImpl.getY() == getY();
 			}
 			return  false;
 		}
