@@ -41,14 +41,16 @@ public class CurrencyImpl implements Currency {
 	 * @see sef.module6.activity.Currency#getDenomination()
 	 */
 	public Denomination getDenomination() {
-		return denomination;
+
+		return new DenominationImpl(denomination.getName(), denomination.getDescription(), denomination.getSymbol());
 	}
 
 	/* (non-Javadoc)
 	 * @see sef.module6.activity.Currency#getCreateDate()
 	 */
 	public Calendar getCreateDate() {
-		return createDate;
+		Calendar calendar = Calendar.getInstance(createDate.getTimeZone());
+		return calendar;
 	}
 
 	/* (non-Javadoc)
@@ -63,8 +65,6 @@ public class CurrencyImpl implements Currency {
 	 * @see java.lang.Object#equals(java.lang.Object)
 	 */
 	public boolean equals(Object o) {
-		
 		return this == o;
 	}
-
 }
