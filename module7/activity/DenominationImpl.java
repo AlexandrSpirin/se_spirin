@@ -56,9 +56,13 @@ public class DenominationImpl implements Denomination {
 	 * @see java.lang.Object#equals(java.lang.Object)
 	 */
 	public boolean equals(Object o) {
-		
-		return this == o;
-
+		if(this != null) {
+			DenominationImpl denomination = (DenominationImpl)o;
+			return denomination.name == this.name;
+		}
+		else
+		{
+			return o == null;
+		}
 	}
-
 }
