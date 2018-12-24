@@ -58,7 +58,11 @@ public class DenominationImpl implements Denomination {
 	public boolean equals(Object o) {
 		if(this != null) {
 			DenominationImpl denomination = (DenominationImpl)o;
-			return denomination.name == this.name;
+			if(denomination!=null)
+			{
+				return denomination.name == this.name;
+			}
+			return  false;
 		}
 		else
 		{
