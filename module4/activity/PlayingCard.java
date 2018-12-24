@@ -61,61 +61,279 @@ public class PlayingCard {
 		switch (number) {
 			case ACE:
 				this.number=ACE;
+				switch (suit) {
+					case SPADES:
+						this.suit = SPADES;
+						break;
+					case HEARTS:
+						this.suit = HEARTS;
+						break;
+					case DIAMONDS:
+						this.suit = DIAMONDS;
+						break;
+					case CLUBS:
+						this.suit = CLUBS;
+						break;
+					default:
+						this.suit = JOKER;
+						this.number = JOKER;
+						break;
+				}
 				break;
 			case TWO:
 				this.number=TWO;
+				switch (suit) {
+					case SPADES:
+						this.suit = SPADES;
+						break;
+					case HEARTS:
+						this.suit = HEARTS;
+						break;
+					case DIAMONDS:
+						this.suit = DIAMONDS;
+						break;
+					case CLUBS:
+						this.suit = CLUBS;
+						break;
+					default:
+						this.suit = JOKER;
+						this.number = JOKER;
+						break;
+				}
 				break;
 			case THREE:
 				this.number=THREE;
+				switch (suit) {
+					case SPADES:
+						this.suit = SPADES;
+						break;
+					case HEARTS:
+						this.suit = HEARTS;
+						break;
+					case DIAMONDS:
+						this.suit = DIAMONDS;
+						break;
+					case CLUBS:
+						this.suit = CLUBS;
+						break;
+					default:
+						this.suit = JOKER;
+						this.number = JOKER;
+						break;
+				}
 				break;
 			case FOUR:
 				this.number=FOUR;
+				switch (suit) {
+					case SPADES:
+						this.suit = SPADES;
+						break;
+					case HEARTS:
+						this.suit = HEARTS;
+						break;
+					case DIAMONDS:
+						this.suit = DIAMONDS;
+						break;
+					case CLUBS:
+						this.suit = CLUBS;
+						break;
+					default:
+						this.suit = JOKER;
+						this.number = JOKER;
+						break;
+				}
 				break;
 			case FIVE:
 				this.number=FIVE;
+				switch (suit) {
+					case SPADES:
+						this.suit = SPADES;
+						break;
+					case HEARTS:
+						this.suit = HEARTS;
+						break;
+					case DIAMONDS:
+						this.suit = DIAMONDS;
+						break;
+					case CLUBS:
+						this.suit = CLUBS;
+						break;
+					default:
+						this.suit = JOKER;
+						this.number = JOKER;
+						break;
+				}
 				break;
 			case SIX:
 				this.number=SIX;
+				switch (suit) {
+					case SPADES:
+						this.suit = SPADES;
+						break;
+					case HEARTS:
+						this.suit = HEARTS;
+						break;
+					case DIAMONDS:
+						this.suit = DIAMONDS;
+						break;
+					case CLUBS:
+						this.suit = CLUBS;
+						break;
+					default:
+						this.suit = JOKER;
+						this.number = JOKER;
+						break;
+				}
 				break;
 			case SEVEN:
 				this.number=SEVEN;
+				switch (suit) {
+					case SPADES:
+						this.suit = SPADES;
+						break;
+					case HEARTS:
+						this.suit = HEARTS;
+						break;
+					case DIAMONDS:
+						this.suit = DIAMONDS;
+						break;
+					case CLUBS:
+						this.suit = CLUBS;
+						break;
+					default:
+						this.suit = JOKER;
+						this.number = JOKER;
+						break;
+				}
 				break;
 			case EIGHT:
 				this.number=EIGHT;
+				switch (suit) {
+					case SPADES:
+						this.suit = SPADES;
+						break;
+					case HEARTS:
+						this.suit = HEARTS;
+						break;
+					case DIAMONDS:
+						this.suit = DIAMONDS;
+						break;
+					case CLUBS:
+						this.suit = CLUBS;
+						break;
+					default:
+						this.suit = JOKER;
+						this.number = JOKER;
+						break;
+				}
 				break;
 			case NINE:
 				this.number=NINE;
+				switch (suit) {
+					case SPADES:
+						this.suit = SPADES;
+						break;
+					case HEARTS:
+						this.suit = HEARTS;
+						break;
+					case DIAMONDS:
+						this.suit = DIAMONDS;
+						break;
+					case CLUBS:
+						this.suit = CLUBS;
+						break;
+					default:
+						this.suit = JOKER;
+						this.number = JOKER;
+						break;
+				}
 				break;
 			case TEN:
 				this.number=TEN;
+				switch (suit) {
+					case SPADES:
+						this.suit = SPADES;
+						break;
+					case HEARTS:
+						this.suit = HEARTS;
+						break;
+					case DIAMONDS:
+						this.suit = DIAMONDS;
+						break;
+					case CLUBS:
+						this.suit = CLUBS;
+						break;
+					default:
+						this.suit = JOKER;
+						this.number = JOKER;
+						break;
+				}
 				break;
 			case JACK:
 				this.number=JACK;
+				switch (suit) {
+					case SPADES:
+						this.suit = SPADES;
+						break;
+					case HEARTS:
+						this.suit = HEARTS;
+						break;
+					case DIAMONDS:
+						this.suit = DIAMONDS;
+						break;
+					case CLUBS:
+						this.suit = CLUBS;
+						break;
+					default:
+						this.suit = JOKER;
+						this.number = JOKER;
+						break;
+				}
 				break;
 			case QUEEN:
 				this.number=QUEEN;
+				switch (suit) {
+					case SPADES:
+						this.suit = SPADES;
+						break;
+					case HEARTS:
+						this.suit = HEARTS;
+						break;
+					case DIAMONDS:
+						this.suit = DIAMONDS;
+						break;
+					case CLUBS:
+						this.suit = CLUBS;
+						break;
+					default:
+						this.suit = JOKER;
+						this.number = JOKER;
+						break;
+				}
 				break;
 			case KING:
 				this.number=KING;
+				switch (suit) {
+					case SPADES:
+						this.suit = SPADES;
+						break;
+					case HEARTS:
+						this.suit = HEARTS;
+						break;
+					case DIAMONDS:
+						this.suit = DIAMONDS;
+						break;
+					case CLUBS:
+						this.suit = CLUBS;
+						break;
+					default:
+						this.suit = JOKER;
+						this.number = JOKER;
+						break;
+				}
 				break;
 			default:
 				this.number=JOKER;
-				break;
-		}
-		switch (suit) {
-			case SPADES:
-				this.suit=SPADES;
-				break;
-			case HEARTS:
-				this.suit=HEARTS;
-				break;
-			case DIAMONDS:
-				this.suit=DIAMONDS;
-				break;
-			case CLUBS:
-				this.suit=CLUBS;
-				break;
-			default:
 				this.suit=JOKER;
 				break;
 		}
@@ -146,7 +364,7 @@ public class PlayingCard {
 		
 		//TODO #4: Return the Integer value of the playing card
 		// Return the value of current value of the number 
-		return number;
+		return this.number;
 		//END TODO #4
 	}
 
@@ -161,7 +379,7 @@ public class PlayingCard {
 
 		//TODO #5: Return the Integer value of the playing card
 		// Return the value of current value of the suit 
-		return suit;
+		return this.suit;
 		//END TODO #5
 	}
 
@@ -188,7 +406,7 @@ public class PlayingCard {
 					case DIAMONDS:
 						return "ACE OF DIAMONDS";
 					case HEARTS:
-						return"ACE OF HEARTS";
+						return "ACE OF HEARTS";
 					case SPADES:
 						return "ACE OF SPADES";
 					default:
@@ -201,7 +419,7 @@ public class PlayingCard {
 					case DIAMONDS:
 						return "TWO OF DIAMONDS";
 					case HEARTS:
-						return"TWO OF HEARTS";
+						return "TWO OF HEARTS";
 					case SPADES:
 						return "TWO OF SPADES";
 					default:
@@ -214,7 +432,7 @@ public class PlayingCard {
 					case DIAMONDS:
 						return "THREE OF DIAMONDS";
 					case HEARTS:
-						return"THREE OF HEARTS";
+						return "THREE OF HEARTS";
 					case SPADES:
 						return "THREE OF SPADES";
 					default:
@@ -227,7 +445,7 @@ public class PlayingCard {
 					case DIAMONDS:
 						return "FOUR OF DIAMONDS";
 					case HEARTS:
-						return"FOUR OF HEARTS";
+						return "FOUR OF HEARTS";
 					case SPADES:
 						return "FOUR OF SPADES";
 					default:
@@ -240,7 +458,7 @@ public class PlayingCard {
 					case DIAMONDS:
 						return "FIVE OF DIAMONDS";
 					case HEARTS:
-						return"FIVE OF HEARTS";
+						return "FIVE OF HEARTS";
 					case SPADES:
 						return "FIVE OF SPADES";
 					default:
@@ -253,7 +471,7 @@ public class PlayingCard {
 					case DIAMONDS:
 						return "SIX OF DIAMONDS";
 					case HEARTS:
-						return"SIX OF HEARTS";
+						return "SIX OF HEARTS";
 					case SPADES:
 						return "SIX OF SPADES";
 					default:
@@ -266,7 +484,7 @@ public class PlayingCard {
 					case DIAMONDS:
 						return "SEVEN OF DIAMONDS";
 					case HEARTS:
-						return"SEVEN OF HEARTS";
+						return "SEVEN OF HEARTS";
 					case SPADES:
 						return "SEVEN OF SPADES";
 					default:
@@ -279,7 +497,7 @@ public class PlayingCard {
 					case DIAMONDS:
 						return "EIGHT OF DIAMONDS";
 					case HEARTS:
-						return"EIGHT OF HEARTS";
+						return "EIGHT OF HEARTS";
 					case SPADES:
 						return "EIGHT OF SPADES";
 					default:return "JOKER";
@@ -291,7 +509,7 @@ public class PlayingCard {
 					case DIAMONDS:
 						return "NINE OF DIAMONDS";
 					case HEARTS:
-						return"NINE OF HEARTS";
+						return "NINE OF HEARTS";
 					case SPADES:
 						return "NINE OF SPADES";
 					default:
@@ -304,7 +522,7 @@ public class PlayingCard {
 					case DIAMONDS:
 						return "TEN OF DIAMONDS";
 					case HEARTS:
-						return"TEN OF HEARTS";
+						return "TEN OF HEARTS";
 					case SPADES:
 						return "TEN OF SPADES";
 					default:
@@ -317,7 +535,7 @@ public class PlayingCard {
 					case DIAMONDS:
 						return "JACK OF DIAMONDS";
 					case HEARTS:
-						return"JACK OF HEARTS";
+						return "JACK OF HEARTS";
 					case SPADES:
 						return "JACK OF SPADES";
 					default:
@@ -330,7 +548,7 @@ public class PlayingCard {
 					case DIAMONDS:
 						return "QUEEN OF DIAMONDS";
 					case HEARTS:
-						return"QUEEN OF HEARTS";
+						return "QUEEN OF HEARTS";
 					case SPADES:
 						return "QUEEN OF SPADES";
 					default:
@@ -343,7 +561,7 @@ public class PlayingCard {
 					case DIAMONDS:
 						return "KING OF DIAMONDS";
 					case HEARTS:
-						return"KING OF HEARTS";
+						return "KING OF HEARTS";
 					case SPADES:
 						return "KING OF SPADES";
 					default:
