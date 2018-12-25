@@ -22,19 +22,19 @@ public class AccountDAOImpl implements AccountDAO {
 			throws AccountDAOException {
 		try {
 			PreparedStatement pStmt =
-					conn.prepareStatement("select * from Account where FIRST_NAME = ? AND LAST_NAME = ?");
-			pStmt.setString(1, firstName);
-			pStmt.setString(2, lastName);
+					conn.prepareStatement("select * from Account where UPPER(FIRST_NAME) LIKE ? AND UPPER(LAST_NAME) LIKE ?");
+			pStmt.setString(1, "'%" + firstName.toUpperCase() + "%'");
+			pStmt.setString(2, "'%" + lastName.toUpperCase() + "%'");
 			ResultSet rs = pStmt.executeQuery();
-			List<Account> tempAccountList = new ArrayList();
+			List<Account> accountList = new ArrayList();
 			while(rs.next())
 			{
-				tempAccountList.add(new AccountImpl(rs.getInt("ID"), rs.getString("FIRST_NAME"),
+				accountList.add(new AccountImpl(rs.getInt("ID"), rs.getString("FIRST_NAME"),
 						rs.getString("LAST_NAME"), rs.getString("E_MAIL")));
 			}
 			conn.commit();
 			rs.close();
-			return tempAccountList;
+			return accountList;
 		}
 		catch (Exception e){
 			throw new AccountDAOException(AccountDAOException.ERROR_FIND_NAME, new Throwable(e));
@@ -67,8 +67,8 @@ public class AccountDAOImpl implements AccountDAO {
 	public boolean insertAccount(String firstName, String lastName, String email)
 			throws AccountDAOException {
 		try {
-			PreparedStatement pStmt =
-					conn.prepareStatement("insert into Account (FIRST_NAME, LAST_NAME, E_MAIL) VALUES (?,?,?)");
+			PreparedStatement pStmt = conn.prepareStatement
+					("insert into Account (ID, FIRST_NAME, LAST_NAME, E_MAIL) VALUES (ACCOUNT_SEQ.NEXTVAL, ?,?,?)");
 			pStmt.setString(1,firstName);
 			pStmt.setString(2,lastName);
 			pStmt.setString(3,email);
