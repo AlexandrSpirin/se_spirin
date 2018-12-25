@@ -21,10 +21,11 @@ public class AccountDAOImpl implements AccountDAO {
 	public List<Account> findAccount(String firstName, String lastName)
 			throws AccountDAOException {
 		try {
+
 			PreparedStatement pStmt =
 					conn.prepareStatement("select * from Account where UPPER(FIRST_NAME) LIKE ? AND UPPER(LAST_NAME) LIKE ?");
-			pStmt.setString(1, "'%" + firstName.toUpperCase() + "%'");
-			pStmt.setString(2, "'%" + lastName.toUpperCase() + "%'");
+			pStmt.setString(1, "%" + firstName.toUpperCase() + "%");
+			pStmt.setString(2, "%" + lastName.toUpperCase() + "%");
 			ResultSet rs = pStmt.executeQuery();
 			List<Account> accountList = new ArrayList();
 			while(rs.next())
