@@ -23,6 +23,7 @@ public class Account {
 	 * @throws AccountException
 	 */
 	public  Account(String accountName) throws AccountException{
+		this.accountName=accountName;
 		if(accountName.length()<4)
 		{
 			throw new AccountException(AccountException.NAME_TOO_SHORT,accountName);
@@ -30,7 +31,7 @@ public class Account {
 		else {
 			Pattern pattern = Pattern.compile("[a-zA-Z]\\d");
 			Matcher matcher = pattern.matcher(accountName);
-			if (matcher.find()) {
+			if (!matcher.find()) {
 				throw new AccountException(AccountException.NAME_TOO_SIMPLE, accountName);
 			}
 			else
